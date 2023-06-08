@@ -31,7 +31,7 @@ requirements:
     - python >=3.7
     - requests >=2.20.0,<3
     - globus-sdk
-    - globus-compute-sdk ==2.0.3
+    - globus-compute-sdk ==2.1.0
     - globus-compute-common ==0.2.0
     - texttable >=1.6.4,<2
     - psutil <6
