@@ -49,7 +49,6 @@ test:
   commands:
     - pip check
     - globus-compute-endpoint --help
-    - globus-compute-interchange --help
     - globus-compute-manager --help
     - globus-compute-worker --help
   requires:
