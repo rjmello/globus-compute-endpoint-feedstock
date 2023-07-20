@@ -1,5 +1,5 @@
 {% set name = "globus-compute-endpoint" %}
-{% set version = "2.2.3" %}
+{% set version = "2.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/globus-compute-endpoint-{{ version }}.tar.gz
-  sha256: 7a6382dafacaad9732b7603d7586615cd8278a011f91f80148ee0e6986e605e8
+  sha256: 42f5a2302079f2045275a40569abdaace09617dfa80def407515b8cec276061c
 
 build:
   entry_points:
@@ -34,7 +34,7 @@ requirements:
     - python-daemon >=2,<3
     - click >=8,<9
     - pyzmq >=22.0.0,!=22.3.0,<=23.2.0
-    - parsl ==2023.03.27
+    - parsl =2023.7.3
     - pika >=1.2.0
     - setproctitle >=1.3.2,<1.4
     - jinja2
