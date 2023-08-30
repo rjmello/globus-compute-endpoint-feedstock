@@ -1,5 +1,5 @@
 {% set name = "globus-compute-endpoint" %}
-{% set version = "2.3.1" %}
+{% set version = "2.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/globus-compute-endpoint-{{ version }}.tar.gz
-  sha256: 9f81667268462d392245ccf92e64a4691fee48e50bc3951463d29d55a5ca172e
+  sha256: dba59a75bb5a32efaeb655c7226a2e728f8e30fa117c4ec08f14f5c777573165
 
 build:
   entry_points:
