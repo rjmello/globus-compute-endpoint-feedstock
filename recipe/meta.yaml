@@ -39,6 +39,8 @@ requirements:
     - setproctitle >=1.3.2,<1.4
     - jinja2
     - pyyaml
+    - jsonschema
+    - pyprctl
 
 test:
   imports:
