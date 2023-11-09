@@ -14,7 +14,7 @@ build:
     - globus-compute-endpoint=globus_compute_endpoint.cli:cli_run
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -64,4 +64,5 @@ about:
 extra:
   recipe-maintainers:
     - carterbox
-    - conda-forge/funcx
+    - WardLT
+    - jan-janssen
