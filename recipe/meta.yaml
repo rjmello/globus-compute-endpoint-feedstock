@@ -42,6 +42,9 @@ requirements:
     - pyyaml >=6.0,<7.0
     - jinja2 >=3.1.2,<3.2
     - jsonschema >=4.19.0,<4.20
+    - cachetools
+    - globus-identity-mapping
+    - types-cachetools
 
 test:
   imports:
