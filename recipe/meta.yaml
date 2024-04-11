@@ -59,7 +59,7 @@ test:
     - pip
 
 about:
-  home: https://github.com/funcx-faas/funcx
+  home: https://github.com/globus/globus-compute
   summary: 'Globus Compute: High Performance Function Serving for Science'
   license: Apache-2.0
   license_file: LICENSE
