@@ -24,7 +24,6 @@ requirements:
     - python >=3.7
     - pip
   run:
-    - click-option-group >=0.5.6,<1
     - python >=3.7
     - requests >=2.31.0,<3
     - globus-sdk
@@ -35,6 +34,7 @@ requirements:
     - psutil <6
     - python-daemon >=2,<3
     - click >=8,<9
+    - click-option-group >=0.5.6,<1
     - pyzmq >=22.0.0,!=22.3.0,<=23.2.0
     - parsl ==2024.3.18
     - pika >=1.2.0
@@ -45,7 +45,6 @@ requirements:
     - jsonschema >=4.19.0,<4.20
     - cachetools >=5.3.1
     - types-cachetools >=5.3.0.6
-    - typing-extensions >=4.10.0
 
 test:
   imports:
