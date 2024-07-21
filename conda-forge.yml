@@ -1,6 +1,7 @@
 bot:
   automerge: true
   inspection: update-grayskull
+  check_solvable: true
 github:
   branch_name: main
   tooling_branch_name: main
