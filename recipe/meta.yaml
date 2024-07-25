@@ -73,4 +73,4 @@ extra:
     - carterbox
     - WardLT
     - jan-janssen
-    - conda-forge/globus-compute-sdk-feedstock
+    - conda-forge/globus-compute-sdk
