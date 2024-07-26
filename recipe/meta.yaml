@@ -70,7 +70,6 @@ about:
 
 extra:
   recipe-maintainers:
-    - carterbox
     - WardLT
     - jan-janssen
     - conda-forge/globus-compute-sdk
