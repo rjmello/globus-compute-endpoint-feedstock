@@ -21,12 +21,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
     - click-option-group >=0.5.6,<1
-    - python >=3.7
+    - python >={{ python_min }}
     - requests >=2.31.0,<3
     - globus-sdk
     - globus-compute-sdk ==2.33.0
@@ -59,6 +59,7 @@ test:
     - globus-compute-worker --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/globus/globus-compute
