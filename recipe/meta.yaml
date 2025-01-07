@@ -1,13 +1,13 @@
 {% set name = "globus-compute-endpoint" %}
-{% set version = "2.30.1" %}
+{% set version = "2.33.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: a88e975eac0b48d1ac0771bb0fb67f2bf90e6784bd638949a35d63153ce80de3
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 8c8badc8bc2b077b66fad62327bb125e69bc25b24d8394b4cb861592ab62f36a
 
 build:
   entry_points:
@@ -21,35 +21,32 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
     - click-option-group >=0.5.6,<1
-    - python >=3.7
+    - python >={{ python_min }}
     - requests >=2.31.0,<3
     - globus-sdk
-    - globus-compute-sdk ==2.30.1
-    - globus-compute-common ==0.4.1
-    - globus-identity-mapping ==0.3.0
+    - globus-compute-sdk ==2.33.0
+    - globus-compute-common ==0.5.0
+    - globus-identity-mapping ==0.4.0
     - texttable >=1.6.4,<2
     - psutil <6
     - python-daemon >=2,<3
     - click >=8,<9
     - click-option-group >=0.5.6,<1
     - pyzmq >=22.0.0,!=22.3.0,<=26.1.0
-    - parsl ==2024.10.21
+    - parsl ==2024.11.25
     - pika >=1.2.0
     - pyprctl <0.2.0
     - setproctitle >=1.3.2,<1.4
     - pyyaml >=6.0,<7.0
     - jinja2 >=3.1.3,<3.2
-    - jsonschema >=4.19.0,<4.20
+    - jsonschema >=4.21,<5
     - cachetools >=5.3.1
     - types-cachetools >=5.3.0.6
-    # fix version constraints
-    - typing-extensions >=4.9,<4.10
-    - typeguard <=4.2.0
 
 test:
   imports:
@@ -62,6 +59,7 @@ test:
     - globus-compute-worker --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/globus/globus-compute
