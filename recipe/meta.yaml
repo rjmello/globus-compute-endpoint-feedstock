@@ -12,9 +12,6 @@ source:
 build:
   entry_points:
     - globus-compute-endpoint=globus_compute_endpoint.cli:cli_run
-    - globus-compute-interchange=globus_compute_endpoint.engines.high_throughput.interchange:cli_run
-    - globus-compute-manager=globus_compute_endpoint.engines.high_throughput.manager:cli_run
-    - globus-compute-worker=globus_compute_endpoint.engines.high_throughput.worker:cli_run
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
@@ -54,9 +51,6 @@ test:
   commands:
     - pip check
     - globus-compute-endpoint --help
-    - globus-compute-interchange --help
-    - globus-compute-manager --help
-    - globus-compute-worker --help
   requires:
     - pip
     - python {{ python_min }}
